@@ -1,0 +1,12 @@
+body {
+    height: 1000px;
+    background-color: red;
+
+}
+.nav {
+    height: 40px;
+    background-color: aqua;
+    position: absolute;
+    z-index: 1;
+    top:0;
+}
