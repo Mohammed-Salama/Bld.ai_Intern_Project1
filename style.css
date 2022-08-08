@@ -186,7 +186,8 @@ input[type="search"] {
     justify-content: center;
   }
 .right-img-container{
-    margin-top: 70px;
+   /*margin-top: 70px;*/
+   padding-top: 90px;
 }
 .New-text{
     font-size: 1.9rem;
@@ -345,4 +346,8 @@ h6{
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 0.8rem;
+}
+figure{
+  margin: 0px 0px 0px 0px;
+  padding: 0px  0px 0px 0px;
 }
