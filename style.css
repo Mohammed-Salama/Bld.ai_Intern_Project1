@@ -125,7 +125,7 @@ input[type="search"] {
   .med-container{
     display: flex;
     width: 80%;
-    height: 50%;
+    /*height: 50%;*/
     background-color: rgb(249, 249, 249);
     justify-content: space-around;
     align-items: center;
