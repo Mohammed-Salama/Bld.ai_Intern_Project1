@@ -156,6 +156,11 @@ input[type="search"] {
     font-size: 1.1rem;
     font-weight: 400;
 }
+@media screen and (max-width: 600px) {
+  .med-container{
+    flex-direction: column-reverse;
+  }
+}
 /*------------------------------------------------------------------------------- */
 
 .last-container{
