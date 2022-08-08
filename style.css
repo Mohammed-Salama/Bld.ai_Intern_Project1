@@ -34,7 +34,7 @@
 }
 .search-area{
     background-image: url("http://kodyrabatowe.wp.pl/img/ico/search_gr.png") ;
-    height: 30px;
+    height: 50px;
     border-radius: 30px;
     border: 1px solid #ccc;
     font-size: 14px;
@@ -42,6 +42,7 @@
     margin-right: 10px;
     flex-grow: 1;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 .nav-r-box{
     display: inline-block;
@@ -77,7 +78,7 @@
     border: 1px solid black;
     display: inline-block;
     font-family: sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.4;
     font-size: 1rem;
     height: 40px;
@@ -89,7 +90,7 @@
     display: inline-block;
     color: white;
     font-family: sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.4;
     font-size: 1rem;
     height: 40px;
@@ -120,8 +121,23 @@
   /*------------------------------------------------------------------------------- */
   .med-container{
     display: flex;
-    margin: auto;
     width: 80%;
-    height: 38%;
-    background-color: red;
+    height: 400px;
+    background-color: rgb(249, 249, 249);
+    margin-top: 7px;
+    margin: auto;
+    margin-top: 2px;
+    justify-content: space-around;
+    align-items: center;
+    
   }
+
+  .left-text-container{
+    padding: 10px;
+    width: 28%;
+    background-color: white;
+    justify-content: center;
+  }
+.right-img-container{
+    margin-top: 3px;
+}
