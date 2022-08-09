@@ -186,8 +186,7 @@ input[type="search"] {
     justify-content: center;
   }
 .right-img-container{
-   /*margin-top: 70px;*/
-   padding-top: 90px;
+   margin-top: 70px;
 }
 .New-text{
     font-size: 1.9rem;
@@ -206,6 +205,26 @@ input[type="search"] {
     width: 80%;
     margin-top: 0px;
   }
+  .New-text{
+    font-size: 1.5rem;
+}
+.price-text{
+  font-family: Calibri;
+    font-size: 0.9rem;
+}
+}
+@media screen and (max-width: 470px) {
+  .med-container{
+    width: 100%;
+    left: 0px;
+    right: 0px;
+  }
+  .New-text{
+    font-size: 1.3rem;
+}
+.price-text{
+    font-size: 0.8rem;
+}
 }
 /*------------------------------------------------------------------------------- */
 
@@ -215,6 +234,7 @@ input[type="search"] {
   right: 10%;
   left: 10%;
 }
+
 
 .last-sec-text{
   padding-left: 20px;
@@ -350,4 +370,68 @@ h6{
 figure{
   margin: 0px 0px 0px 0px;
   padding: 0px  0px 0px 0px;
+}
+.bar-explore-button{
+  background-color: white; /* Green */
+  border: 1px solid black;
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: 600;
+  line-height: 1.4;
+  font-size: 1rem;
+  height: 40px;
+}
+@media screen and (max-width: 470px) {
+  .last-sec-text{
+    font-size: 1.3rem;
+  }
+  .last-sec-p{
+      font-size: 0.8rem;
+  }
+  .last-bar-button{
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+  .courses-H{
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: Calibri;
+  }
+  .courses-p{
+    font-family: Calibri;
+      font-size: 0.9rem;
+      font-weight: 400;
+  }
+  .last-container{
+    width: 100%;
+    position: relative;
+    right: 0px;
+    left: 0px;
+  }
+  .courses-container{
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 5px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+  }
+  .course{
+    margin: 8px;
+    margin-left: 8px;
+    padding-left: 8px;
+  }
+  .courses-view{
+    flex-direction: column;
+    margin-top: 8px;
+    margin-left: 8px;
+    padding-left: 8px;
+  }
+  .bar-explore-button{
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  .course-photo{
+    width: 150px;
+  }
 }
