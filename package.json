@@ -1,0 +1,23 @@
+{
+  "name": "Bld.ai_Intern_Project1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"json-server --watch ./database/db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohammed-Salama/Bld.ai_Intern_Project1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mohammed-Salama/Bld.ai_Intern_Project1/issues"
+  },
+  "homepage": "https://github.com/Mohammed-Salama/Bld.ai_Intern_Project1#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}

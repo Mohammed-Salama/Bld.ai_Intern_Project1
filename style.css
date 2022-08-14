@@ -205,6 +205,9 @@ input[type="search"] {
     width: 80%;
     margin-top: 0px;
   }
+  .right-img-container{
+    height: 100px;
+  }
   .New-text{
     font-size: 1.5rem;
 }
@@ -317,7 +320,7 @@ input[type="search"] {
   width: 100%;
   margin-bottom: 0px;
 }
-.course-disc{
+.course-description{
   max-width: 200px;
 }
 h4{
