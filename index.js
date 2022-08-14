@@ -59,4 +59,21 @@ const newFetch = async ()=>{
  newFetch().then(x=>x.forEach(createCourseCard))
 console.log('hello')
 
+let search_form = document.querySelector('.search-form');
+search_form.addEventListener('submit', (e)=>{
+  e.preventDefault();
+  let search_input = document.querySelector('.search-area');
+  let search_value = search_input.value;
+  let courses = document.querySelectorAll('.course');
+  courses.forEach(course=>{
+    if(course.querySelector('.course-description').textContent.includes(search_value)){
+      course.style.display = 'block';
+    }
+    else{
+      course.style.display = 'none';
+    }
+    
+  })});
+
+
 

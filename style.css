@@ -32,6 +32,9 @@
 .search-form{
     display: inline-block;
 }
+.search-form-span{
+  display: inline-block;
+}
 input[type="search"] {
   font-family: FontAwesome;
 }
