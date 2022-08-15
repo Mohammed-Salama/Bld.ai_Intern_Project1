@@ -1,4 +1,4 @@
-.nav {
+.nav-bar {
     height: 70px;
     background-color: white;
     box-shadow: 0 4px 2px -2px rgb(209, 209, 209);
@@ -272,6 +272,9 @@ input[type="search"] {
 .last-bar-button:hover{
   color: black;
 }
+.active{
+  color: black;
+}
 .last-bar-button:focus{
   color: black;
   background-color: white; /* Green */
@@ -377,7 +380,7 @@ figure{
   margin: 0px 0px 0px 0px;
   padding: 0px  0px 0px 0px;
 }
-.bar-explore-button{
+.courses-explore-button{
   background-color: white; /* Green */
   border: 1px solid black;
   display: inline-block;
@@ -432,7 +435,7 @@ figure{
     margin-left: 8px;
     padding-left: 8px;
   }
-  .bar-explore-button{
+  .courses-explore-button{
     font-size: 0.8rem;
   }
 }

@@ -10,11 +10,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">-->
     <link rel = "icon" href = "./icons/udemy-icon.png" type = "image/x-icon">
 </head>
 <body>
     <nav>
-        <div class="nav">
+        <div class="nav-bar">
             <span class="nav-l-icon"><img class="world-grid" src="./icons/Hamburger_icon.svg.png" ></span>
             <span class="nav-logo-box"><a  href="https://www.udemy.com/" target="_blank"> <img class="nav-logo" alt="logo" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"> </a></span>
             <span class="nav-l-box"><button class="nav-button">Categories</button></span>
@@ -52,25 +53,21 @@
             <h1 class="last-sec-text">A broad selection of courses</h1>
             <p class="last-sec-p">Choose from 185,000 online video courses with new additions published every month</p>
             <div class="last-sec-bar">
-                <button class="last-bar-button" autofocus>Python</button>
-                <button class="last-bar-button">Excel</button>
-                <button class="last-bar-button">Web Development</button>
-                <button class="last-bar-button">JavaScript</button>
-                <button class="last-bar-button">Data Science</button>
-                <button class="last-bar-button">AWS Certification</button>
-                <button class="last-bar-button">Drawing</button>
+                <button id="defaultTabButton" class="last-bar-button" onClick="viewCourses(event,'pythonData')">Python</button>
+                <button class="last-bar-button" onClick="viewCourses(event,'excelData')">Excel</button>
+                <button class="last-bar-button" onClick="viewCourses(event,'webData')">Web Development</button>
+                <button class="last-bar-button" onClick="viewCourses(event,'jsData')">JavaScript</button>
+                <button class="last-bar-button" onClick="viewCourses(event,'dataScienceData')">Data Science</button>
+                <button class="last-bar-button" onClick="viewCourses(event,'AWSData')">AWS Certification</button>
+                <button class="last-bar-button" onClick="viewCourses(event,'DrawingData')">Drawing</button>
             </div>
-            
+
             <div class="courses-container">
-                <h1 class="courses-H">Expand your career opportunities with Python</h1>
-                <div class="courses-p-box"><p class="courses-p">Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language. Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. You’ll learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to ...</p></div>
-                <div><button class="bar-explore-button">Explore Python</button></div>
-                <div class="courses-view">
-                    <!--read from the json server-->
-                </div>
+               <!--this container will be filled from the server-->
             </div>
         </div>
     </section>
 <script src="./index.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>-->
 </body>
 </html>
