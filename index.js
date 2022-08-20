@@ -60,6 +60,7 @@ let fillCoursesContainer = async (topic)=> {
     stars_bar.classList.add('stars-bar');
     let stars_num = document.createElement('h5');
     stars_num.textContent=item.stars;
+    stars_num.classList.add('stars-num');
     stars_bar.appendChild(stars_num);
     for(let i=0; i<item.stars; i++){
       let star = document.createElement('span');
@@ -75,11 +76,11 @@ let fillCoursesContainer = async (topic)=> {
       stars_bar.appendChild(star);
     }
     let ratings_num = document.createElement('p');
-    ratings_num.textContent=item.ratings_count;
+    ratings_num.textContent=' ('+item.ratings_count+') ';
     ratings_num.classList.add('ratings-num');
     stars_bar.appendChild(ratings_num);
     course.appendChild(stars_bar);
-    let price = document.createElement('h4');
+    let price = document.createElement('h4'); 
     price.textContent = 'E£'+item.price;
     course.appendChild(price);
     courses_view_div.appendChild(course);

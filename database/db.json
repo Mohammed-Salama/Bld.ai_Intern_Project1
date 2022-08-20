@@ -10,7 +10,7 @@
           "description":"Learn Python: The Complete Python Programming Course",
           "author":"Avinash Jain, The Codex",
           "stars":4,
-          "ratings-count":1721,
+          "ratings_count":1721,
           "price":679.99
         },
         {
@@ -18,7 +18,7 @@
           "description":"Learning Python for Data Analysis and Visualization",
           "author":"Jose Portille",
           "stars":5,
-          "ratings-count":4037,
+          "ratings_count":4037,
           "price":1499.99
         },
         {
@@ -26,7 +26,7 @@
           "description":"Python for Beginners - Learn Programming from scratch",
           "author":"Edwin Diaz, Coding Faculty Solutions",
           "stars":3,
-          "ratings-count":1231,
+          "ratings_count":1231,
           "price":679.99
         },
         {
@@ -34,7 +34,7 @@
           "description":"Learn Python: Python for Beginners",
           "author":"Abrar Hussain",
           "stars":4,
-          "ratings-count":1439,
+          "ratings_count":1439,
           "price":389.99
         },
         {
@@ -42,7 +42,7 @@
           "description":"Python Beyond the Basics - Object-Oriented Programming",
           "author":"Infinite Skills",
           "stars":4,
-          "ratings-count":2570,
+          "ratings_count":2570,
           "price":529.99
         },
         {
@@ -50,7 +50,7 @@
           "description":"Python for Data Structures, Algorithms, and Interviews!",
           "author":"Jose Portilla",
           "stars":4,
-          "ratings-count":9471,
+          "ratings_count":9471,
           "price":1299.99
         }
     
@@ -68,7 +68,7 @@
           "description":"Microsoft Excel 2013 Course Beginners/ Intermediate Training",
           "author":"Infinite Skills",
           "stars":4,
-          "ratings-count":1721,
+          "ratings_count":1721,
           "price":679.99
         },
         {
@@ -76,7 +76,7 @@
           "description":"Microsoft Excel 2013  Advanced. Online Excel Training Course",
           "author":"Infinite Skills",
           "stars":5,
-          "ratings-count":4037,
+          "ratings_count":4037,
           "price":1499.99
         },
         {
@@ -84,7 +84,7 @@
           "description":"Microsoft Excel - From Beginner to Expert in 6 Hours",
           "author":"Todd McLeod",
           "stars":3,
-          "ratings-count":1231,
+          "ratings_count":1231,
           "price":679.99
         },
         {
@@ -92,7 +92,7 @@
           "description":"Learn Microsoft Excel 2013 - Advanced",
           "author":"Abrar Hussain",
           "stars":4,
-          "ratings-count":1439,
+          "ratings_count":1439,
           "price":389.99
         },
         {
@@ -100,7 +100,7 @@
           "description":"The Ultimate Microsoft Excel 2013 Training Bundle - 19 Hours",
           "author":"Simon Sez IT",
           "stars":4,
-          "ratings-count":9471,
+          "ratings_count":9471,
           "price":1299.99
         }
     

@@ -192,6 +192,7 @@ input[type="search"] {
    margin-top: 70px;
 }
 .New-text{
+  font-family: serif;
     font-size: 1.9rem;
     font-weight: 600;
 }
@@ -243,6 +244,8 @@ input[type="search"] {
 
 
 .last-sec-text{
+  padding: 20px;
+  font-family: serif;
   padding-left: 20px;
   font-size: 2.2rem;
   font-weight: 600;
@@ -295,6 +298,7 @@ input[type="search"] {
   padding-bottom: 20px;
 }
 .courses-H{
+  padding-top: 20px;
   font-size: 2rem;
   font-weight: 700;
   font-family: Calibri;
@@ -315,18 +319,21 @@ input[type="search"] {
   align-content: flex-start;
 }
 .course{
-  margin: 20px;
+  margin: .5em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-top: 0px;
+  padding-top: 0px; 
 }
 .course-img{
   width: 100%;
   margin-bottom: 0px;
 }
 .course-description{
+  font-family: Calibri;
+    font-size: 1.05rem;
+    font-weight: 800;
   max-width: 200px;
 }
 h4{
@@ -350,7 +357,7 @@ h4{
   align-items: center;
   flex-direction: row;
 }
-h5{
+.stars-num{
   margin-top: 0px;
   margin-bottom: 0px;
   color: orange;
@@ -443,4 +450,29 @@ figure{
   .course-photo{
     width: 150px;
   }
+}
+
+.carousel-inner{
+  display: flex;
+  padding: 1em;
+}
+.carousel-item{
+  display: block;
+  width: 150px;
+  flex: 0 0 calc(100%/3);
+  margin-right: 0px;
+}
+
+.top-categories-container{
+  width: 80%;
+  position: relative;
+  right: 10%;
+  left: 10%;
+  padding : 0.1em;
+}
+.top-categories-cards{
+  padding: 0.1em;
+}
+.img-wrapper{
+  padding: .1em;
 }
