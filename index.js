@@ -30,32 +30,59 @@ let fillCoursesContainer = async (topic)=> {
   explore_button.textContent = 'Explore '+topicJsonData.topicname;
   courses_container.appendChild(explore_button);
 
-  //create the courses view part
-  let courses_view_div = document.createElement('div');
-  courses_view_div.classList.add('courses-view');
+  
 
-  //fill the courses view div with courses cards
+  //filling the carousel view div with courses cards
+  let carousel_view_div = document.createElement('div');
+  carousel_view_div.classList.add('carousel');
+  carousel_view_div.classList.add('slide');
+  carousel_view_div.classList.add('carousel-dark');
+  carousel_view_div.setAttribute('data-bs-ride','carousel');
+  carousel_view_div.setAttribute('id','carouselSlidesControls');
+
+  let carousel_inner = document.createElement('div');
+  carousel_inner.classList.add('carousel-inner');
+  let courses_in_screen = Math.floor(window.innerWidth/360);
+  let added = 0;  let carousel_item;
   for (let i = 0; i < topicJsonData.courses.length; i++) {
+    //creating new carousel item (new slide)
+    if (added == 0){
+      carousel_item = document.createElement('div');
+      carousel_item.classList.add('carousel-item');
+      if (i==0)carousel_item.classList.add('active');
+      carousel_inner.appendChild(carousel_item);
+    }
+
+    //creating new course card
     let item = topicJsonData.courses[i];
-    let course = document.createElement('span');
+    let course = document.createElement('div');
     course.classList.add('course');
+
+    //adding course image to the course card
     let fig = document.createElement('figure');
     let img_div = document.createElement('div');
     img_div.classList.add('course-img');
     img= document.createElement('img');
     img.classList.add('course-photo');
     img.setAttribute('src', item.img);
+    img.setAttribute('alt', topic+" course: "+toString(i+1));
     img_div.appendChild(img);
     fig.appendChild(img_div);
     course.appendChild(fig);
+
+    //adding course title to the course card
     let desc = document.createElement('h4');
     desc.classList.add('course-description');
     desc.textContent = item.description;
     course.appendChild(desc);
+
+    //adding course author to the course card
     let author = document.createElement('p');
     author.classList.add('author');
     author.textContent = item.author;
     course.appendChild(author);
+
+    //adding course stars bar to the course card
     let stars_bar = document.createElement('div');
     stars_bar.classList.add('stars-bar');
     let stars_num = document.createElement('h5');
@@ -75,17 +102,36 @@ let fillCoursesContainer = async (topic)=> {
       star.classList.add('fa-star');
       stars_bar.appendChild(star);
     }
+
+    //adding ratings count to stars bar
     let ratings_num = document.createElement('p');
     ratings_num.textContent=' ('+item.ratings_count+') ';
     ratings_num.classList.add('ratings-num');
     stars_bar.appendChild(ratings_num);
     course.appendChild(stars_bar);
+
+    //adding course price to the course card
     let price = document.createElement('h4'); 
+    price.classList.add('price-text');
     price.textContent = 'E£'+item.price;
     course.appendChild(price);
-    courses_view_div.appendChild(course);
+    carousel_item.appendChild(course);
+    added = (added+1)%courses_in_screen;
   }
-  courses_container.appendChild(courses_view_div);
+  carousel_view_div.appendChild(carousel_inner);
+
+  //adding carousel controls to the carousel view div
+  carousel_view_div.innerHTML += `
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselSlidesControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+</button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselSlidesControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+</button>
+`;
+  courses_container.appendChild(carousel_view_div);
 }
 
 
@@ -103,7 +149,7 @@ search_form.addEventListener('submit', (e)=>{
   let courses = document.querySelectorAll('.course');
   courses.forEach(course=>{
     if(course.querySelector('.course-description').textContent.includes(search_value)){
-      course.style.display = 'block';
+      course.style.display = 'inline-block';
     }
     else{
       course.style.display = 'none';
@@ -131,7 +177,7 @@ function viewCourses(event , topic){
   if(course_descriptipn_paragraph)course_descriptipn_paragraph.remove();
   let explore_button = document.querySelector('.courses-explore-button');
   if(explore_button)explore_button.remove();
-  let courses_view = document.querySelector('.courses-view');
+  let courses_view = document.querySelector('.carousel');
   if(courses_view)courses_view.remove();
 
   //make the clicked button active

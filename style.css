@@ -199,18 +199,26 @@ input[type="search"] {
 .price-text{
   font-family: Calibri;
     font-size: 1.1rem;
+    font-weight: 600;
+}
+.offers-text{
+  font-family: Calibri;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 @media screen and (max-width: 600px) {
   .med-container{
     flex-direction: column-reverse;
   }
+  .alarm-img{
+    height: 50%;
+  }
   .left-text-container{
     width: 80%;
     margin-top: 0px;
   }
   .right-img-container{
-    height: 100px;
+    height: 50%;
   }
   .New-text{
     font-size: 1.5rem;
@@ -311,16 +319,19 @@ input[type="search"] {
     font-size: 1.2rem;
     font-weight: 400;
 }
-.courses-view{
+/*.courses-view{
   margin-top: 20px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: flex-start;
-}
+  /*flex-wrap: wrap;*/
+  /*flex-wrap: nowrap;
+   overflow-x: auto;
+  
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; 
+}*/
 .course{
   margin: .5em;
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -452,17 +463,6 @@ figure{
   }
 }
 
-.carousel-inner{
-  display: flex;
-  padding: 1em;
-}
-.carousel-item{
-  display: block;
-  width: 150px;
-  flex: 0 0 calc(100%/3);
-  margin-right: 0px;
-}
-
 .top-categories-container{
   width: 80%;
   position: relative;
@@ -475,4 +475,15 @@ figure{
 }
 .img-wrapper{
   padding: .1em;
+}
+
+/*-----------------------------------------------------*/
+
+.carousel-item{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow:hidden ;
+  justify-content: flex-start;
+  align-content: flex-start;
 }
