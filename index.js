@@ -14,6 +14,7 @@ let fillCoursesContainer = async (topic)=> {
   courses_H.classList.add('courses-H');
   courses_H.textContent = topicJsonData.head;
   courses_container.appendChild(courses_H);
+  
 
   //create the description paragraph
   let courses_b_box = document.createElement('div');
