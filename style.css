@@ -1,4 +1,4 @@
-.nav {
+.nav-bar {
     height: 70px;
     background-color: white;
     box-shadow: 0 4px 2px -2px rgb(209, 209, 209);
@@ -192,10 +192,16 @@ input[type="search"] {
    margin-top: 70px;
 }
 .New-text{
+  font-family: serif;
     font-size: 1.9rem;
     font-weight: 600;
 }
 .price-text{
+  font-family: Calibri;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.offers-text{
   font-family: Calibri;
     font-size: 1.1rem;
     font-weight: 400;
@@ -204,12 +210,15 @@ input[type="search"] {
   .med-container{
     flex-direction: column-reverse;
   }
+  .alarm-img{
+    height: 50%;
+  }
   .left-text-container{
     width: 80%;
     margin-top: 0px;
   }
   .right-img-container{
-    height: 100px;
+    height: 50%;
   }
   .New-text{
     font-size: 1.5rem;
@@ -243,6 +252,8 @@ input[type="search"] {
 
 
 .last-sec-text{
+  padding: 20px;
+  font-family: serif;
   padding-left: 20px;
   font-size: 2.2rem;
   font-weight: 600;
@@ -272,6 +283,9 @@ input[type="search"] {
 .last-bar-button:hover{
   color: black;
 }
+.active{
+  color: black;
+}
 .last-bar-button:focus{
   color: black;
   background-color: white; /* Green */
@@ -292,6 +306,7 @@ input[type="search"] {
   padding-bottom: 20px;
 }
 .courses-H{
+  padding-top: 20px;
   font-size: 2rem;
   font-weight: 700;
   font-family: Calibri;
@@ -304,26 +319,32 @@ input[type="search"] {
     font-size: 1.2rem;
     font-weight: 400;
 }
-.courses-view{
+/*.courses-view{
   margin-top: 20px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: flex-start;
-}
+  /*flex-wrap: wrap;*/
+  /*flex-wrap: nowrap;
+   overflow-x: auto;
+  
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; 
+}*/
 .course{
-  margin: 20px;
-  display: flex;
+  margin: .5em;
+  display: inline-block;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-top: 0px;
+  padding-top: 0px; 
 }
 .course-img{
   width: 100%;
   margin-bottom: 0px;
 }
 .course-description{
+  font-family: Calibri;
+    font-size: 1.05rem;
+    font-weight: 800;
   max-width: 200px;
 }
 h4{
@@ -347,7 +368,7 @@ h4{
   align-items: center;
   flex-direction: row;
 }
-h5{
+.stars-num{
   margin-top: 0px;
   margin-bottom: 0px;
   color: orange;
@@ -377,7 +398,7 @@ figure{
   margin: 0px 0px 0px 0px;
   padding: 0px  0px 0px 0px;
 }
-.bar-explore-button{
+.courses-explore-button{
   background-color: white; /* Green */
   border: 1px solid black;
   display: inline-block;
@@ -432,7 +453,7 @@ figure{
     margin-left: 8px;
     padding-left: 8px;
   }
-  .bar-explore-button{
+  .courses-explore-button{
     font-size: 0.8rem;
   }
 }
@@ -440,4 +461,29 @@ figure{
   .course-photo{
     width: 150px;
   }
+}
+
+.top-categories-container{
+  width: 80%;
+  position: relative;
+  right: 10%;
+  left: 10%;
+  padding : 0.1em;
+}
+.top-categories-cards{
+  padding: 0.1em;
+}
+.img-wrapper{
+  padding: .1em;
+}
+
+/*-----------------------------------------------------*/
+
+.carousel-item{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow:hidden ;
+  justify-content: flex-start;
+  align-content: flex-start;
 }
